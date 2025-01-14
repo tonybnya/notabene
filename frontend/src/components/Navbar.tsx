@@ -10,10 +10,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center">
             <BookText className="h-6 w-6 text-primary" />
             <span className="ml-2 font-semibold text-primary">Notabene</span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
@@ -28,7 +28,7 @@ const Navbar = () => {
               variant="outline"
               className="border-primary text-primary hover:bg-primary/10 hover:text-primary"
             >
-              <a href="#">Login</a>
+              <a href="/login">Login</a>
             </Button>
           </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
               variant="outline"
               className="w-full justify-center border-primary text-primary hover:bg-primary/10 hover:text-primary"
             >
-              <a href="#">Login</a>
+              <a href="/login">Login</a>
             </Button>
           </div>
         )}

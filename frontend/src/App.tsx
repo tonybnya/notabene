@@ -1,10 +1,15 @@
 import "./styles/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
+
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import Docs from "./pages/Docs";
 import Notes from "./pages/Notes";
+
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+
 import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => {
@@ -18,6 +23,8 @@ const App = () => {
             <Route path="about" element={<About />} />
             <Route path="docs" element={<Docs />} />
             <Route path="notes" element={<Notes />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

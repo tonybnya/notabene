@@ -121,7 +121,9 @@ const Landing = () => {
             note-taking experience.
           </p>
           <Button size="lg" className="px-8 bg-primary hover:bg-primary/90">
-            Create Your Free Account
+            <a href="/signup" target="_blank">
+              Create Your Free Account
+            </a>
           </Button>
         </div>
       </div>

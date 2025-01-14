@@ -8,8 +8,10 @@ const LandingFeatures = () => {
         Everything you need in a note-taking app
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <Card className="p-6 space-y-4 hover:shadow-lg transition-shadow border-secondary/20">
-          <Edit3 className="h-8 w-8 text-primary mx-auto" />
+        <Card className="p-6 space-y-4 shadow-2xl hover:shadow-lg transition-shadow border-secondary/20">
+          <div className="bg-white w-16 h-16 rounded-full shadow-inner flex justify-center items-center mx-auto">
+            <Edit3 className="h-6 w-6 text-primary" />
+          </div>
           <h3 className="text-xl font-semibold text-primary">
             Rich Markdown Support
           </h3>
@@ -19,8 +21,10 @@ const LandingFeatures = () => {
           </p>
         </Card>
 
-        <Card className="p-6 space-y-4 hover:shadow-lg transition-shadow border-secondary/20">
-          <Save className="h-8 w-8 text-primary mx-auto" />
+        <Card className="p-6 space-y-4 shadow-2xl hover:shadow-lg transition-shadow border-secondary/20">
+          <div className="bg-white w-16 h-16 rounded-full shadow-inner flex justify-center items-center mx-auto">
+            <Save className="h-6 w-6 text-primary" />
+          </div>
           <h3 className="text-xl font-semibold text-primary">
             Auto-Save & Sync
           </h3>
@@ -30,8 +34,10 @@ const LandingFeatures = () => {
           </p>
         </Card>
 
-        <Card className="p-6 space-y-4 hover:shadow-lg transition-shadow border-secondary/20">
-          <Lock className="h-8 w-8 text-primary mx-auto" />
+        <Card className="p-6 space-y-4 shadow-2xl hover:shadow-lg transition-shadow border-secondary/20">
+          <div className="bg-white w-16 h-16 rounded-full shadow-inner flex justify-center items-center mx-auto">
+            <Lock className="h-6 w-6 text-primary" />
+          </div>
           <h3 className="text-xl font-semibold text-primary">
             Secure by Design
           </h3>
@@ -41,8 +47,10 @@ const LandingFeatures = () => {
           </p>
         </Card>
 
-        <Card className="p-6 space-y-4 hover:shadow-lg transition-shadow border-secondary/20">
-          <Calendar className="h-8 w-8 text-primary mx-auto" />
+        <Card className="p-6 space-y-4 shadow-2xl hover:shadow-lg transition-shadow border-secondary/20">
+          <div className="bg-white w-16 h-16 rounded-full shadow-inner flex justify-center items-center mx-auto">
+            <Calendar className="h-6 w-6 text-primary mx-auto" />
+          </div>
           <h3 className="text-xl font-semibold text-primary">
             Timestamp Tracking
           </h3>
@@ -51,16 +59,20 @@ const LandingFeatures = () => {
           </p>
         </Card>
 
-        <Card className="p-6 space-y-4 hover:shadow-lg transition-shadow border-secondary/20">
-          <FileText className="h-8 w-8 text-primary mx-auto" />
+        <Card className="p-6 space-y-4 shadow-2xl hover:shadow-lg transition-shadow border-secondary/20">
+          <div className="bg-white w-16 h-16 rounded-full shadow-inner flex justify-center items-center mx-auto">
+            <FileText className="h-6 w-6 text-primary mx-auto" />
+          </div>
           <h3 className="text-xl font-semibold text-primary">HTML Export</h3>
           <p className="text-muted-foreground">
             Convert your Markdown notes to clean HTML for sharing or publishing.
           </p>
         </Card>
 
-        <Card className="p-6 space-y-4 hover:shadow-lg transition-shadow border-secondary/20">
-          <BookText className="h-8 w-8 text-primary mx-auto" />
+        <Card className="p-6 space-y-4 shadow-2xl hover:shadow-lg transition-shadow border-secondary/20">
+          <div className="bg-white w-16 h-16 rounded-full shadow-inner flex justify-center items-center mx-auto">
+            <BookText className="h-6 w-6 text-primary mx-auto" />
+          </div>
           <h3 className="text-xl font-semibold text-primary">
             Organized Collections
           </h3>

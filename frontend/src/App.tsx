@@ -4,6 +4,7 @@ import Layout from "./pages/Layout";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import Docs from "./pages/Docs";
+import Notes from "./pages/Notes";
 import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="landing" element={<Landing />} />
             <Route path="about" element={<About />} />
             <Route path="docs" element={<Docs />} />
+            <Route path="notes" element={<Notes />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

@@ -20,15 +20,15 @@ const Navbar = () => {
             <Button
               asChild
               variant="ghost"
-              className="text-primary hover:bg-primary/10"
+              className="text-white bg-primary hover:bg-primary/90"
             >
               <a href="/notes">Create a note</a>
             </Button>
             <Button
               variant="outline"
-              className="border-primary text-primary hover:bg-primary/10"
+              className="border-primary text-primary hover:bg-primary/10 hover:text-primary"
             >
-              Login
+              <a href="#">Login</a>
             </Button>
           </div>
 
@@ -51,15 +51,15 @@ const Navbar = () => {
             <Button
               asChild
               variant="ghost"
-              className="w-full justify-start text-primary hover:bg-primary/10"
+              className="w-full justify-center text-white bg-primary hover:bg-primary/90"
             >
               <a href="/notes">Create a note</a>
             </Button>
             <Button
               variant="outline"
-              className="w-full justify-start border-primary text-primary hover:bg-primary/10"
+              className="w-full justify-center border-primary text-primary hover:bg-primary/10 hover:text-primary"
             >
-              Login
+              <a href="#">Login</a>
             </Button>
           </div>
         )}

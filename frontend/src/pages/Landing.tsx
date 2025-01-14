@@ -30,7 +30,7 @@ const Landing = () => {
             <Button
               size="lg"
               variant="outline"
-              className="px-8 border-primary text-primary hover:bg-primary/10"
+              className="px-8 border-primary text-primary hover:bg-primary/10 hover:text-primary"
             >
               <a href="/docs" target="_blank">
                 Learn More

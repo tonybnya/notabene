@@ -33,7 +33,7 @@ const NotFoundPage = () => {
             <br />
             found!
           </h1>
-          <p className="text-lg max-lg:text-sm font-light leading-none tracking-tight">
+          <p className="text-lg max-lg:text-sm font-light leading-6 tracking-tight">
             Home is just a click away. Let's go back and
             <br />
             continue our regular life.

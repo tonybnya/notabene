@@ -14,7 +14,7 @@ const NotFoundPage = () => {
       </div>
 
       <div className="w-1/2 flex flex-col justify-between max-lg:justify-center items-center p-8 bg-black min-h-screen">
-        <div className="flex items-center gap-3 mb-12">
+        <div className="flex flex-col items-center gap-3 mb-12">
           <BookText className="h-12 w-12 max-lg:w-10 max-lg:h-10 text-primary" />
           <span className="text-4xl max-lg:text-lg font-bold text-primary tracking-tight">
             Notabene
@@ -47,7 +47,7 @@ const NotFoundPage = () => {
           </Button>
         </div>
 
-        <div className="mt-12 text-[#8f7d5e] text-sm">
+        <div className="mt-12 text-[#8f7d5e] text-sm font-bold">
           <span>Error Code 404</span>
         </div>
       </div>

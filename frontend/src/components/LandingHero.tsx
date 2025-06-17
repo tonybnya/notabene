@@ -10,7 +10,7 @@ const LandingHero = () => {
           <span className="text-4xl font-bold ml-2 text-primary">Notabene</span>
         </div>
         <h1 className="text-5xl font-bold tracking-tight">
-          Your thoughts, beautifully organized
+          Your thoughts, beautifully organized.
         </h1>
         <p className="text-xl text-muted-foreground">
           A modern note-taking app that helps you capture, organize, and share

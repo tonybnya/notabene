@@ -32,7 +32,11 @@ const NotFoundPage = () => {
           <p className="text-lg max-lg:text-sm font-light leading-6 tracking-tight">
             Home is just a click away. Let's go back and
             <br />
-            continue our regular life.
+            continue with our{" "}
+            <span className="text-[#8f7d5e] font-bold text-lg max-lg:text-sm">
+              notes
+            </span>
+            .
           </p>
 
           <Button size="lg" className="px-8 bg-primary hover:bg-primary/90">

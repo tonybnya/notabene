@@ -1,6 +1,6 @@
 import { BookText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import bg from "../assets/bg.png";
+import bg from "/assets/images/bg.png";
 
 const NotFoundPage = () => {
   return (

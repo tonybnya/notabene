@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { SignedOut, SignedIn } from "@clerk/clerk-react";
+import { Link } from "react-router-dom";
 
 const LandingCTA = () => {
   return (
@@ -11,11 +13,24 @@ const LandingCTA = () => {
           Join thousands of users who have already transformed their note-taking
           experience.
         </p>
-        <Button size="lg" className="px-8 bg-primary hover:bg-primary/90">
-          <a href="/signup" target="_blank">
-            Create Your Free Account
-          </a>
-        </Button>
+
+        {/* Show CTA to sign up only if user is signed out */}
+        <SignedOut>
+          <Button
+            size="lg"
+            className="px-8 bg-primary hover:bg-primary/90"
+            asChild
+          >
+            <Link to="/sign-up">Create Your Free Account</Link>
+          </Button>
+        </SignedOut>
+
+        {/* Optionally show something else if already signed in */}
+        <SignedIn>
+          <p className="text-green-600 font-semibold">
+            You're already signed in! 🎉
+          </p>
+        </SignedIn>
       </div>
     </div>
   );

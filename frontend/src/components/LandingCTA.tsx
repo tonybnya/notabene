@@ -18,7 +18,7 @@ const LandingCTA = () => {
         <SignedOut>
           <Button
             size="lg"
-            className="px-8 bg-primary hover:bg-primary/90"
+            className="px-8 bg-primary hover:bg-primary/90 min-w-[16rem]"
             asChild
           >
             <Link to="/sign-up">Create Your Free Account</Link>

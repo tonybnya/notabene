@@ -1,35 +1,32 @@
 import "./styles/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
+import { Routes, Route } from "react-router-dom";
+import PublicLayout from "./layouts/PublicLayout";
+import ProtectedLayout from "./layouts/ProtectedLayout";
 
 import Landing from "./pages/Landing";
-import About from "./pages/About";
-import Docs from "./pages/Docs";
-import Notes from "./pages/Notes";
-
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-
+import Dashboard from "./pages/Dashboard";
+import AuthenticationPage from "./auth/AuthenticationPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Landing />} />
-            <Route path="landing" element={<Landing />} />
-            <Route path="about" element={<About />} />
-            <Route path="docs" element={<Docs />} />
-            <Route path="notes" element={<Notes />} />
-            <Route path="login" element={<Login />} />
-            <Route path="signup" element={<Signup />} />
-          </Route>
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <Routes>
+      {/* Public Routes */}
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<Landing />} />
+        <Route path="/landing" element={<Landing />} />
+        <Route path="/sign-in/*" element={<AuthenticationPage />} />
+        <Route path="/sign-up/*" element={<AuthenticationPage />} />
+      </Route>
+
+      {/* Protected Routes */}
+      <Route element={<ProtectedLayout />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Route>
+
+      {/* Fallback */}
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 };
 

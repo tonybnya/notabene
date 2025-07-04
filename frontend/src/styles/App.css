@@ -4,3 +4,20 @@
   /*padding: 2rem;*/
   text-align: center;
 }
+
+.auth-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redirect-message {
+  text-align: center;
+  color: #1f2937;
+  margin-top: 1rem;
+}
